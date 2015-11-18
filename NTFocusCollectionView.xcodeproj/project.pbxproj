@@ -12,6 +12,7 @@
 		259C55C51BFC341400D644C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259C55C31BFC341400D644C7 /* Main.storyboard */; };
 		259C55C71BFC341400D644C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259C55C61BFC341400D644C7 /* Assets.xcassets */; };
 		259C55CA1BFC341400D644C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259C55C81BFC341400D644C7 /* LaunchScreen.storyboard */; };
+		259C55E31BFC365200D644C7 /* NTFocusCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C55E21BFC365200D644C7 /* NTFocusCollectionViewLayout.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		259C55C61BFC341400D644C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		259C55C91BFC341400D644C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		259C55CB1BFC341400D644C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259C55E21BFC365200D644C7 /* NTFocusCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTFocusCollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,9 @@
 				259C55BE1BFC341400D644C7 /* NTFocusCollectionView */,
 				259C55BD1BFC341400D644C7 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		259C55BD1BFC341400D644C7 /* Products */ = {
 			isa = PBXGroup;
@@ -54,14 +58,71 @@
 		259C55BE1BFC341400D644C7 /* NTFocusCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				259C55BF1BFC341400D644C7 /* AppDelegate.swift */,
-				259C55C11BFC341400D644C7 /* ViewController.swift */,
-				259C55C31BFC341400D644C7 /* Main.storyboard */,
-				259C55C61BFC341400D644C7 /* Assets.xcassets */,
+				259C55DE1BFC360700D644C7 /* App */,
+				259C55DF1BFC360C00D644C7 /* View Controllers */,
+				259C55E01BFC361400D644C7 /* Views */,
+				259C55DB1BFC35DA00D644C7 /* Resources */,
+			);
+			path = NTFocusCollectionView;
+			sourceTree = "<group>";
+		};
+		259C55DB1BFC35DA00D644C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				259C55DD1BFC35F800D644C7 /* Images */,
+				259C55DC1BFC35E400D644C7 /* Other Resources */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		259C55DC1BFC35E400D644C7 /* Other Resources */ = {
+			isa = PBXGroup;
+			children = (
 				259C55C81BFC341400D644C7 /* LaunchScreen.storyboard */,
 				259C55CB1BFC341400D644C7 /* Info.plist */,
 			);
-			path = NTFocusCollectionView;
+			name = "Other Resources";
+			sourceTree = "<group>";
+		};
+		259C55DD1BFC35F800D644C7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				259C55C61BFC341400D644C7 /* Assets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		259C55DE1BFC360700D644C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				259C55BF1BFC341400D644C7 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		259C55DF1BFC360C00D644C7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				259C55C11BFC341400D644C7 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		259C55E01BFC361400D644C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				259C55E11BFC362300D644C7 /* Custom Views */,
+				259C55C31BFC341400D644C7 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		259C55E11BFC362300D644C7 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				259C55E21BFC365200D644C7 /* NTFocusCollectionViewLayout.swift */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259C55E31BFC365200D644C7 /* NTFocusCollectionViewLayout.swift in Sources */,
 				259C55C21BFC341400D644C7 /* ViewController.swift in Sources */,
 				259C55C01BFC341400D644C7 /* AppDelegate.swift in Sources */,
 			);
