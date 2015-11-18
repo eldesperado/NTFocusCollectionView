@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Hapiness</string>
+		<key>detail</key>
+		<string>Happiness is here and now</string>
+		<key>image</key>
+		<string>happiness</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Mindfulness</string>
+		<key>detail</key>
+		<string>We&apos;re aware of being alive</string>
+		<key>image</key>
+		<string>mindfulness</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Blissful</string>
+		<key>detail</key>
+		<string>Every day is a gift to live</string>
+		<key>image</key>
+		<string>blissful</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Kindness</string>
+		<key>detail</key>
+		<string>Share your kindness</string>
+		<key>image</key>
+		<string>kindness</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Peace</string>
+		<key>detail</key>
+		<string>Peace in oneself. Peace in the world</string>
+		<key>image</key>
+		<string>peace</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Stillness</string>
+		<key>detail</key>
+		<string>Everything you do today, let it be filled with joy and serenity</string>
+		<key>image</key>
+		<string>stillness</string>
+	</dict>
+</array>
+</plist>

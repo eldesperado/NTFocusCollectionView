@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250AE0C31BFC651F00B033D9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AE0C21BFC651F00B033D9 /* Post.swift */; settings = {ASSET_TAGS = (); }; };
+		250AE0C61BFC67D700B033D9 /* NTDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AE0C51BFC67D700B033D9 /* NTDataModel.swift */; settings = {ASSET_TAGS = (); }; };
 		259C55C01BFC341400D644C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C55BF1BFC341400D644C7 /* AppDelegate.swift */; };
-		259C55C21BFC341400D644C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C55C11BFC341400D644C7 /* ViewController.swift */; };
 		259C55C51BFC341400D644C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259C55C31BFC341400D644C7 /* Main.storyboard */; };
 		259C55C71BFC341400D644C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259C55C61BFC341400D644C7 /* Assets.xcassets */; };
 		259C55CA1BFC341400D644C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259C55C81BFC341400D644C7 /* LaunchScreen.storyboard */; };
 		259C55E31BFC365200D644C7 /* NTFocusCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C55E21BFC365200D644C7 /* NTFocusCollectionViewLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		25DBC0491BFC8E2600624D50 /* NTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBC0481BFC8E2600624D50 /* NTDemoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		25DBC04C1BFC918000624D50 /* NTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBC04B1BFC918000624D50 /* NTCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		25DBC04F1BFC949300624D50 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25DBC04E1BFC949300624D50 /* Data.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250AE0C21BFC651F00B033D9 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		250AE0C51BFC67D700B033D9 /* NTDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTDataModel.swift; sourceTree = "<group>"; };
 		259C55BC1BFC341400D644C7 /* NTFocusCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTFocusCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		259C55BF1BFC341400D644C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		259C55C11BFC341400D644C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		259C55C41BFC341400D644C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		259C55C61BFC341400D644C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		259C55C91BFC341400D644C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		259C55CB1BFC341400D644C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		259C55E21BFC365200D644C7 /* NTFocusCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTFocusCollectionViewLayout.swift; sourceTree = "<group>"; };
+		25DBC0481BFC8E2600624D50 /* NTDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTDemoViewController.swift; sourceTree = "<group>"; };
+		25DBC04B1BFC918000624D50 /* NTCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTCollectionViewCell.swift; sourceTree = "<group>"; };
+		25DBC04E1BFC949300624D50 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250AE0BE1BFC618F00B033D9 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				259C55DE1BFC360700D644C7 /* App */,
+				259C55DF1BFC360C00D644C7 /* View Controllers */,
+				250AE0C41BFC67A600B033D9 /* ViewModels */,
+				250AE0BF1BFC619F00B033D9 /* Models */,
+				259C55E01BFC361400D644C7 /* Views */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		250AE0BF1BFC619F00B033D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				250AE0C21BFC651F00B033D9 /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		250AE0C41BFC67A600B033D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				250AE0C51BFC67D700B033D9 /* NTDataModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		259C55B31BFC341400D644C7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +94,8 @@
 		259C55BE1BFC341400D644C7 /* NTFocusCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				259C55DE1BFC360700D644C7 /* App */,
-				259C55DF1BFC360C00D644C7 /* View Controllers */,
-				259C55E01BFC361400D644C7 /* Views */,
+				259C55E11BFC362300D644C7 /* NTFocusCollectionViewLayout */,
+				250AE0BE1BFC618F00B033D9 /* Demo */,
 				259C55DB1BFC35DA00D644C7 /* Resources */,
 			);
 			path = NTFocusCollectionView;
@@ -69,6 +104,7 @@
 		259C55DB1BFC35DA00D644C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25DBC04D1BFC947E00624D50 /* Sample Data */,
 				259C55DD1BFC35F800D644C7 /* Images */,
 				259C55DC1BFC35E400D644C7 /* Other Resources */,
 			);
@@ -103,7 +139,7 @@
 		259C55DF1BFC360C00D644C7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				259C55C11BFC341400D644C7 /* ViewController.swift */,
+				25DBC0481BFC8E2600624D50 /* NTDemoViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -111,18 +147,34 @@
 		259C55E01BFC361400D644C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				259C55E11BFC362300D644C7 /* Custom Views */,
+				25DBC04A1BFC915D00624D50 /* Cells */,
 				259C55C31BFC341400D644C7 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		259C55E11BFC362300D644C7 /* Custom Views */ = {
+		259C55E11BFC362300D644C7 /* NTFocusCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
 				259C55E21BFC365200D644C7 /* NTFocusCollectionViewLayout.swift */,
 			);
-			name = "Custom Views";
+			name = NTFocusCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		25DBC04A1BFC915D00624D50 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				25DBC04B1BFC918000624D50 /* NTCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		25DBC04D1BFC947E00624D50 /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				25DBC04E1BFC949300624D50 /* Data.plist */,
+			);
+			name = "Sample Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +236,7 @@
 			files = (
 				259C55CA1BFC341400D644C7 /* LaunchScreen.storyboard in Resources */,
 				259C55C71BFC341400D644C7 /* Assets.xcassets in Resources */,
+				25DBC04F1BFC949300624D50 /* Data.plist in Resources */,
 				259C55C51BFC341400D644C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,8 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				259C55E31BFC365200D644C7 /* NTFocusCollectionViewLayout.swift in Sources */,
-				259C55C21BFC341400D644C7 /* ViewController.swift in Sources */,
 				259C55C01BFC341400D644C7 /* AppDelegate.swift in Sources */,
+				250AE0C61BFC67D700B033D9 /* NTDataModel.swift in Sources */,
+				25DBC0491BFC8E2600624D50 /* NTDemoViewController.swift in Sources */,
+				25DBC04C1BFC918000624D50 /* NTCollectionViewCell.swift in Sources */,
+				250AE0C31BFC651F00B033D9 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +403,7 @@
 				259C55D01BFC341400D644C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

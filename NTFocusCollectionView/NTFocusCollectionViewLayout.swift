@@ -71,7 +71,7 @@ public class NTFocusCollectionViewLayout: UICollectionViewLayout {
   
   public override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
     guard let cachedLayoutAttributes = cachedLayoutAttributes else { return nil }
-    return cachedLayoutAttributes[indexPath.row]
+    return cachedLayoutAttributes[indexPath.item]
   }
   
   public override func prepareLayout() {
@@ -85,7 +85,7 @@ public class NTFocusCollectionViewLayout: UICollectionViewLayout {
     // The y-coordinate of the currently focused cell
     var y = CGFloat(0.0)
     
-    for cell in 0...numberOfItems {
+    for cell in 0..<numberOfItems {
       let indexPath = NSIndexPath(forItem: cell, inSection: 0)
       let attributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
       
