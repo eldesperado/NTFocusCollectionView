@@ -93,13 +93,13 @@ public class NTFocusCollectionViewLayout: UICollectionViewLayout {
       // Initially set height of cell is equal to the normal cell height
       var cellHeight = normalCellHeight
       
-      if cell == getCurrentFocusedCellIndex() {
+      if indexPath.item == getCurrentFocusedCellIndex() {
         // If current cell is the focused cell then change its attributes
         let yOffset = normalCellHeight * CGFloat(getCurrentFocusedCellIndex())
         y = collectionView.contentOffset.y - yOffset
         // Change cell's height to the focused cell height
         cellHeight = focusedCellHeight
-      } else if (cell == getCurrentFocusedCellIndex() + 1 && cell != numberOfItems + 1) {
+      } else if (indexPath.item == getCurrentFocusedCellIndex() + 1 && indexPath.item != numberOfItems) {
         // Else if this is a cell directly below the currently focused cell, and it's not
         // the last cell
         let maxY = y + normalCellHeight

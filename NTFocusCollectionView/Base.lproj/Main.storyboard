@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Demo View Controller-->
@@ -31,14 +30,18 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HXH-mU-O2a">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="222"/>
                                                 </imageView>
+                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7y-jT-bCQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="222"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyB-Of-aLd">
-                                                    <rect key="frame" x="270" y="78" width="61" height="33"/>
+                                                    <rect key="frame" x="0.0" y="94" width="600" height="33"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mI-FZ-4xi">
-                                                    <rect key="frame" x="255" y="126" width="90" height="24.5"/>
+                                                    <rect key="frame" x="255" y="137.5" width="90" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -49,18 +52,25 @@
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="HXH-mU-O2a" secondAttribute="bottom" id="3Hm-nf-h3H"/>
-                                            <constraint firstItem="9mI-FZ-4xi" firstAttribute="top" secondItem="eyB-Of-aLd" secondAttribute="bottom" constant="15" id="I9s-Pb-20H"/>
-                                            <constraint firstItem="eyB-Of-aLd" firstAttribute="centerX" secondItem="K3g-aT-VuK" secondAttribute="centerX" id="O3T-ba-knH"/>
+                                            <constraint firstAttribute="trailing" secondItem="eyB-Of-aLd" secondAttribute="trailing" id="Ay7-LQ-Lj2"/>
+                                            <constraint firstItem="eyB-Of-aLd" firstAttribute="leading" secondItem="K3g-aT-VuK" secondAttribute="leading" id="Ndc-hZ-wlQ"/>
+                                            <constraint firstItem="x7y-jT-bCQ" firstAttribute="leading" secondItem="K3g-aT-VuK" secondAttribute="leading" id="UnL-nH-e6R"/>
                                             <constraint firstAttribute="trailing" secondItem="HXH-mU-O2a" secondAttribute="trailing" id="XwV-qa-NV0"/>
                                             <constraint firstItem="HXH-mU-O2a" firstAttribute="top" secondItem="K3g-aT-VuK" secondAttribute="top" id="afo-Qe-c57"/>
+                                            <constraint firstItem="eyB-Of-aLd" firstAttribute="centerX" secondItem="K3g-aT-VuK" secondAttribute="centerX" id="coc-Wp-yEe"/>
+                                            <constraint firstItem="9mI-FZ-4xi" firstAttribute="top" secondItem="eyB-Of-aLd" secondAttribute="bottom" constant="10" id="eAc-aD-09H"/>
                                             <constraint firstItem="HXH-mU-O2a" firstAttribute="leading" secondItem="K3g-aT-VuK" secondAttribute="leading" id="gn8-3w-FWi"/>
-                                            <constraint firstItem="eyB-Of-aLd" firstAttribute="top" secondItem="K3g-aT-VuK" secondAttribute="topMargin" constant="70" id="izM-kX-ACc"/>
-                                            <constraint firstItem="9mI-FZ-4xi" firstAttribute="centerX" secondItem="K3g-aT-VuK" secondAttribute="centerX" id="rsg-mn-GUH"/>
+                                            <constraint firstItem="x7y-jT-bCQ" firstAttribute="top" secondItem="K3g-aT-VuK" secondAttribute="top" id="l7E-a9-v7n"/>
+                                            <constraint firstItem="eyB-Of-aLd" firstAttribute="centerY" secondItem="K3g-aT-VuK" secondAttribute="centerY" id="ols-1p-HBt"/>
+                                            <constraint firstAttribute="bottom" secondItem="x7y-jT-bCQ" secondAttribute="bottom" id="tVb-CY-eLW"/>
+                                            <constraint firstAttribute="trailing" secondItem="x7y-jT-bCQ" secondAttribute="trailing" id="uU8-0K-cjG"/>
+                                            <constraint firstItem="9mI-FZ-4xi" firstAttribute="centerX" secondItem="K3g-aT-VuK" secondAttribute="centerX" id="vmD-c7-1K9"/>
                                         </constraints>
                                         <size key="customSize" width="600" height="222"/>
                                         <connections>
                                             <outlet property="backgroundImageView" destination="HXH-mU-O2a" id="swX-5s-zDB"/>
                                             <outlet property="detailLabel" destination="9mI-FZ-4xi" id="Yh4-ut-vcp"/>
+                                            <outlet property="overlayView" destination="x7y-jT-bCQ" id="v39-BJ-cTW"/>
                                             <outlet property="titleLabel" destination="eyB-Of-aLd" id="pwg-pL-VDm"/>
                                         </connections>
                                     </collectionViewCell>
