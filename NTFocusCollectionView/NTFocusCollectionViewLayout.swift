@@ -85,23 +85,24 @@ public class NTFocusCollectionViewLayout: UICollectionViewLayout {
     // The y-coordinate of the currently focused cell
     var y = CGFloat(0.0)
     
-    for cell in 0..<numberOfItems {
-      let indexPath = NSIndexPath(forItem: cell, inSection: 0)
+    for item in 0..<numberOfItems {
+      let indexPath = NSIndexPath(forItem: item, inSection: 0)
       let attributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
       
-      attributes.zIndex = cell
-      // Initially set height of cell is equal to the normal cell height
+      attributes.zIndex = item
+      // Initially set height of item is equal to the normal item height
       var cellHeight = normalCellHeight
       
       if indexPath.item == getCurrentFocusedCellIndex() {
-        // If current cell is the focused cell then change its attributes
-        let yOffset = normalCellHeight * CGFloat(getCurrentFocusedCellIndex())
+
+        // If current item is the focused item then change its attributes
+        let yOffset = normalCellHeight * CGFloat(getNextCellPercentageOffset())
         y = collectionView.contentOffset.y - yOffset
-        // Change cell's height to the focused cell height
+        // Change cell's height to the focused item height
         cellHeight = focusedCellHeight
-      } else if (indexPath.item == getCurrentFocusedCellIndex() + 1 && indexPath.item != numberOfItems) {
-        // Else if this is a cell directly below the currently focused cell, and it's not
-        // the last cell
+      } else if (indexPath.item == (getCurrentFocusedCellIndex() + 1) && indexPath.item != numberOfItems) {
+        // Else if this is a item directly below the currently focused item, and it's not
+        // the last item
         let maxY = y + normalCellHeight
         let nextFocusedCellHeight = (focusedCellHeight - normalCellHeight) * getNextCellPercentageOffset()
         cellHeight = normalCellHeight + max(nextFocusedCellHeight, 0)
@@ -141,4 +142,8 @@ public class NTFocusCollectionViewLayout: UICollectionViewLayout {
     guard let collectionView = collectionView else { return 0 }
     return collectionView.contentOffset.y / minDragOffset - CGFloat(getCurrentFocusedCellIndex())
   }
+}
+
+extension NTFocusCollectionViewLayout: UICollectionViewDelegate {
+  
 }

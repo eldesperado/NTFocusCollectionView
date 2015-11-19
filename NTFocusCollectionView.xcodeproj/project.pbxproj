@@ -17,9 +17,11 @@
 		25DBC0491BFC8E2600624D50 /* NTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBC0481BFC8E2600624D50 /* NTDemoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		25DBC04C1BFC918000624D50 /* NTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBC04B1BFC918000624D50 /* NTCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		25DBC04F1BFC949300624D50 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25DBC04E1BFC949300624D50 /* Data.plist */; settings = {ASSET_TAGS = (); }; };
+		F8231F5936C44406E2499272 /* Pods_NTFocusCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB8BE7419430FD5F9EC1169 /* Pods_NTFocusCollectionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BB8BE7419430FD5F9EC1169 /* Pods_NTFocusCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTFocusCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		250AE0C21BFC651F00B033D9 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		250AE0C51BFC67D700B033D9 /* NTDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTDataModel.swift; sourceTree = "<group>"; };
 		259C55BC1BFC341400D644C7 /* NTFocusCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTFocusCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +34,8 @@
 		25DBC0481BFC8E2600624D50 /* NTDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTDemoViewController.swift; sourceTree = "<group>"; };
 		25DBC04B1BFC918000624D50 /* NTCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTCollectionViewCell.swift; sourceTree = "<group>"; };
 		25DBC04E1BFC949300624D50 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		5DDAC0C9914ED9B758503465 /* Pods-NTFocusCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTFocusCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NTFocusCollectionView/Pods-NTFocusCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		BFF8E5F7AF67A452237BF485 /* Pods-NTFocusCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTFocusCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-NTFocusCollectionView/Pods-NTFocusCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8231F5936C44406E2499272 /* Pods_NTFocusCollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 			children = (
 				259C55BE1BFC341400D644C7 /* NTFocusCollectionView */,
 				259C55BD1BFC341400D644C7 /* Products */,
+				692A94DD3F5A405BDF595465 /* Pods */,
+				31F43387D0291052FDA5C9EA /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -177,6 +184,23 @@
 			name = "Sample Data";
 			sourceTree = "<group>";
 		};
+		31F43387D0291052FDA5C9EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8BE7419430FD5F9EC1169 /* Pods_NTFocusCollectionView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		692A94DD3F5A405BDF595465 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DDAC0C9914ED9B758503465 /* Pods-NTFocusCollectionView.debug.xcconfig */,
+				BFF8E5F7AF67A452237BF485 /* Pods-NTFocusCollectionView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 259C55CE1BFC341400D644C7 /* Build configuration list for PBXNativeTarget "NTFocusCollectionView" */;
 			buildPhases = (
+				2367148BE311C3AAF80F684B /* Check Pods Manifest.lock */,
 				259C55B81BFC341400D644C7 /* Sources */,
 				259C55B91BFC341400D644C7 /* Frameworks */,
 				259C55BA1BFC341400D644C7 /* Resources */,
+				81FA27AEF9105C8104F8EE9F /* Embed Pods Frameworks */,
+				C5F2C3BC5AE33BD04BA63274 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +269,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2367148BE311C3AAF80F684B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81FA27AEF9105C8104F8EE9F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTFocusCollectionView/Pods-NTFocusCollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F2C3BC5AE33BD04BA63274 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTFocusCollectionView/Pods-NTFocusCollectionView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		259C55B81BFC341400D644C7 /* Sources */ = {
@@ -315,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,9 +439,11 @@
 		};
 		259C55CF1BFC341400D644C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DDAC0C9914ED9B758503465 /* Pods-NTFocusCollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NTFocusCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmsofresh..NTFocusCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,9 +452,11 @@
 		};
 		259C55D01BFC341400D644C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF8E5F7AF67A452237BF485 /* Pods-NTFocusCollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NTFocusCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmsofresh..NTFocusCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
