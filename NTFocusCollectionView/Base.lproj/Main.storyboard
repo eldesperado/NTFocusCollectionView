@@ -19,7 +19,19 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rm0-ax-UyI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <collectionViewLayout key="collectionViewLayout" id="EFZ-32-Tgi" customClass="NTFocusCollectionViewLayout" customModule="NTFocusCollectionView" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="EFZ-32-Tgi" customClass="NTFocusCollectionViewLayout" customModule="NTFocusCollectionView" customModuleProvider="target">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="normalCellHeight">
+                                            <real key="value" value="160"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="focusedCellHeight">
+                                            <real key="value" value="360"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="minDragOffset">
+                                            <real key="value" value="220"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </collectionViewLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="K3g-aT-VuK" customClass="NTCollectionViewCell" customModule="NTFocusCollectionView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="222"/>
@@ -36,17 +48,25 @@
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyB-Of-aLd">
-                                                    <rect key="frame" x="0.0" y="94" width="600" height="33"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                    <rect key="frame" x="0.0" y="88" width="600" height="46.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="34"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mI-FZ-4xi">
-                                                    <rect key="frame" x="255" y="137.5" width="90" height="24.5"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="354" translatesAutoresizingMaskIntoConstraints="NO" id="9mI-FZ-4xi">
+                                                    <rect key="frame" x="30" y="144.5" width="540" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24.5" id="Ckr-H4-OEt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                     <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="0.87" colorSpace="calibratedRGB"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="Ckr-H4-OEt"/>
+                                                        </mask>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -58,11 +78,13 @@
                                             <constraint firstItem="x7y-jT-bCQ" firstAttribute="leading" secondItem="K3g-aT-VuK" secondAttribute="leading" id="UnL-nH-e6R"/>
                                             <constraint firstAttribute="trailing" secondItem="HXH-mU-O2a" secondAttribute="trailing" id="XwV-qa-NV0"/>
                                             <constraint firstItem="HXH-mU-O2a" firstAttribute="top" secondItem="K3g-aT-VuK" secondAttribute="top" id="afo-Qe-c57"/>
+                                            <constraint firstAttribute="trailing" secondItem="9mI-FZ-4xi" secondAttribute="trailing" constant="30" id="bt7-45-21W"/>
                                             <constraint firstItem="eyB-Of-aLd" firstAttribute="centerX" secondItem="K3g-aT-VuK" secondAttribute="centerX" id="coc-Wp-yEe"/>
                                             <constraint firstItem="9mI-FZ-4xi" firstAttribute="top" secondItem="eyB-Of-aLd" secondAttribute="bottom" constant="10" id="eAc-aD-09H"/>
                                             <constraint firstItem="HXH-mU-O2a" firstAttribute="leading" secondItem="K3g-aT-VuK" secondAttribute="leading" id="gn8-3w-FWi"/>
                                             <constraint firstItem="x7y-jT-bCQ" firstAttribute="top" secondItem="K3g-aT-VuK" secondAttribute="top" id="l7E-a9-v7n"/>
                                             <constraint firstItem="eyB-Of-aLd" firstAttribute="centerY" secondItem="K3g-aT-VuK" secondAttribute="centerY" id="ols-1p-HBt"/>
+                                            <constraint firstItem="9mI-FZ-4xi" firstAttribute="leading" secondItem="K3g-aT-VuK" secondAttribute="leading" constant="30" id="pnl-tI-nK4"/>
                                             <constraint firstAttribute="bottom" secondItem="x7y-jT-bCQ" secondAttribute="bottom" id="tVb-CY-eLW"/>
                                             <constraint firstAttribute="trailing" secondItem="x7y-jT-bCQ" secondAttribute="trailing" id="uU8-0K-cjG"/>
                                             <constraint firstItem="9mI-FZ-4xi" firstAttribute="centerX" secondItem="K3g-aT-VuK" secondAttribute="centerX" id="vmD-c7-1K9"/>
